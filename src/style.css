@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-size: 1.2rem;
+}
+/* ------------------- */
+/* GLOBAL CLASSES */
+/* ------------------- */
+
+/* button */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    padding: .5em 1em;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background-color: rgba(158, 157, 157,0.2);
+}
+
+.btn-round{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-round:hover{
+    background-color: rgba(158, 157, 157,0.2);
+}
+
+/* row */
+
+.row-wrapper{
+    position: relative;
+}
+
+/* row-button */
+
+.row-button{
+    position: absolute;
+    width: 100%;
+    top: 3em;
+}
+
+.row-button .pref{
+    float: left;
+}
+
+.row-button .next{
+    float: right;
+}
+
+.row-button div{
+    padding: 1em;
+    border: solid 1px white;
+    border-radius: .5em;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(37, 37, 37, 0.35);
+}
+
+.row-button div:hover{
+    color: yellow;
+}
+
+.row{
+    display: grid;
+    grid-gap: 2.5em;
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;
+}
+
+/* section-header */
+
+.section-header{
+    font-size: 2rem;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.section-header h2{
+    font-size: 2.5rem;
+}
+
+.section-header span{
+    display: inline-block;
+    width: 5px;
+    height: 3rem;
+    background-color: yellow;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* movie-card */
+.movie-card img{
+    width: 100%;
+    min-width: 300px;
+    max-height: 300px;
+    /* min-height: 150px; */
+}
+
+.movie-card a{
+    color: white;
+}
+.movie-card h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.movie-card h3 a:hover{
+    text-decoration: underline;
+}
+
+.movie-card p{
+    font-size: 1.2rem;
+    margin-top: .8em;
+}
+
+
+
+/* ------------------- */
+/* TRAILER */
+/* ------------------- */
+
+.trailer{
+    display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-columns: minmax(780px,2fr) minmax(340px,1fr);
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+@media (min-width:1280px){
+    .trailer{
+        max-width: 100%;
+    }
+}
+
+@media (max-width:1024px){
+    .trailer{
+        grid-template-columns: 1fr;
+    }
+}
+
+.trailer__video{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.trailer__video .action{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.trailer__video .action .close-btn{
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+/* membuat posisi icon di tengah */
+.trailer__video .action .share-btn{
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 .5em;
+}
+
+.trailer__video .action .share-btn i{
+    width: 100%;
+}
+/* sampai sini */
+
+.trailer__video .video img{
+    width: 100%;
+}
+
+.movie__info{
+    padding: 2em;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+}
+
+.movie__info__summary{
+    position: relative;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.movie__info__summary .poster{
+    width: 200px;
+    padding-right: 1em;
+}
+
+.movie__info__summary .poster img{
+    width: 100%;
+}
+
+.movie__info__summary .poster i{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+
+.movie__info__summary .info p{
+    color: gray;
+    line-height: 2em;
+}
+
+.movie__info__summary button{
+    color: white;
+}
+
+.line{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    /* margin: 1rem 0; */
+}
+
+.movie__info__sinopsis{
+    margin-top: 1em;
+}
+
+.movie__info__sinopsis h3{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-bottom: 1em;
+}
+
+/* ------------------- */
+/* MOVIE PAGE */
+/* ------------------- */
+
+.hero{
+    max-width: 70em;
+    margin: 0 auto;
+}
+.hero-title{
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.hero-title__pagination i{
+    margin-right: 1em;
+    font-size: 1rem;
+}
+
+.hero-title__pagination a:hover{
+    text-decoration: underline;
+}
+.hero-title-wrapper{
+    flex-grow: 1;
+    margin: 1.5em 1em;
+}
+
+.hero-title__title{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.hero-title-rating{
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.hero-subnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+    font-size: 1.2rem;
+}
+
+.hero-subnav__left-block > i, .hero-subnav__right-block > i{
+    margin: 0 1em;
+}
+
+.hero-subnav__left-block{
+    display: flex;
+    align-items: center;
+}
+
+.hero-subnav__left-block > *{
+    margin: 0 .25em;
+}
+
+.hero-subnav__left-block .episode{
+    color: yellow;
+    font-weight: bold;
+}
+
+.hero-subnav__left-block .episode span{
+    color: white;
+}
+
+.hero-subnav__right-block{
+    display: flex;
+    align-items: center;
+}
+
+.hero-subnav__right-block > *{
+    margin: 0 .25em;
+}
+
+.hero-subnav__right-block a:hover{
+    text-decoration: underline;
+}
+
+/* hero movie */
+
+.hero-movie__poster{
+    max-width: 70em;
+    display: grid;
+    /* margin: 0 auto; */
+	grid-template-columns: 15em auto 10em;
+	grid-auto-rows: minmax(10em,1fr);
+	grid-template-areas: 
+    "watchlist video video-count"
+	"watchlist video photo-count";
+    grid-gap: 5px;
+}
+.hero-movie__poster .watchlist{
+    /* width: 100%; */
+    grid-area: watchlist;
+    /* object-fit: cover; */
+}
+.hero-movie__poster .watchlist img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.hero-movie__poster .video{
+    grid-area: video;
+}
+.hero-movie__poster .video img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-movie__poster .video-count, .hero-movie__poster .photo-count{
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.hero-movie__poster .video-count i, .hero-movie__poster .photo-count i{
+    font-size: 1.5rem;
+    padding-bottom: .5em;
+}
+
+.hero-movie__poster .video-count{
+    grid-area: video-count;
+}
+
+.hero-movie__poster .photo-count{
+    grid-area: photo-count;
+    
+}
+
+/* hero-movie-info */
+
+.hero-movie-info{
+    display: grid;
+    grid-template-columns: 2fr 100px 1fr;
+    grid-template-areas: 
+    "genre . watchlist-btn"
+    "plot . watchlist-btn";
+}
+
+.hero-movie-info .genre{
+    grid-area: genre;
+    margin: 2em 0;
+}
+
+.hero-movie-info .genre span{
+    padding: .5em;
+    border: 1px solid white;
+    border-radius: 1em;
+}
+
+.hero-movie-info .plot{
+    grid-area: plot;
+}
+
+.hero-movie-info .watchlist-btn{
+    grid-area: watchlist-btn;
+    margin-top: 2em;
+    width: 100%;
+    max-height: 3em;
+    display: flex;
+}
+
+.hero-movie-info .watchlist-btn button{
+    padding: 1em;
+    margin-right: 5px;
+    background-color: rgb(54, 54, 54);;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-grow: 1;
+}
+
+.hero-movie-info .watchlist-btn .fa-video{
+    padding: 1em;
+    background-color: rgb(54, 54, 54);;
+    border-radius: 0 5px 5px 0;
+}
+
+@media (max-width:1240px){
+    .hero-title-rating{
+        display: none;
+    }
+
+    .hero-subnav{
+        justify-content: flex-end;
+    }
+
+    .hero-subnav__left-block{
+        display: none;
+    }
+    
+    .hero-subnav__right-block .presentation{
+        display: none;
+    }
+    .hero-movie__poster{
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 3em;
+        grid-template-areas: 
+        "watchlist video video"
+        "video-count video-count photo-count";
+    }
+    .hero-movie__poster .video-count, .hero-movie__poster .photo-count{
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .hero-movie__poster .video-count i, .hero-movie__poster .photo-count i{
+        padding: 0 0.5em;
+    }
+
+    .hero-movie-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "genre"
+            "plot"
+            "watchlist-btn";
+    }
+
+    .hero-movie-info .watchlist-btn{
+        width: 30em;
+    }
+}
+
+@media (max-width:780px){
+    .hero-movie__poster{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3em;
+        grid-template-areas: 
+        "video video"
+        "video-count photo-count";
+    }
+    .hero-movie__poster .watchlist{
+        display: none;
+    }
+}
+
+/* ------------------- */
+/* WATCHLIST */
+/* ------------------- */
+
+.watchlist-container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(190, 190, 190);
+    color: black;
+}
+
+.watchlist__title{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+.watchlist__title .action{
+    display: flex;
+}
+
+.watchlist__title .action > div{
+    padding: 1em;
+}
+
+.watchlist__subnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.watchlist__subnav .subnav-right-block{
+    display: flex;
+}
+
+.watchlist__list{
+    padding: 1.5em;
+}
+
+.watchlist__card{
+    width: 100%;
+    display: flex;
+    padding: 0.5em 0 2em 0;
+    border-bottom: 1px solid grey;
+}
+
+.watchlist__card .card-poster{
+    width: 150px;    
+    margin-right: 1em;
+}
+.watchlist__card .card-poster img{
+    width: 100%;
+}
+
+.card-info a{
+    color: rgb(44, 134, 252);
+}
+
+.card-info a:hover{
+    text-decoration: underline;
+}
+.card-info__title{
+    font-size: 1.3rem;
+}
+
+.card-info__sum span{
+    padding: 0 5px;
+    border-right: 1px solid rgb(150, 150, 150);
+}
+
+.card-info__sum span:nth-last-child(1){
+    border-right: none;
+}
+.card-info__rate, .card-info__cast{
+    padding: .5em 0;
+}
+.card-info__rate .metascore span{
+    background-color: rgb(139, 250, 87);
+    color: white;
+    padding: 3px;
+    font-size: .8rem;
+}
