@@ -1,0 +1,20 @@
+.SideCarousel__card{
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.card-poster{
+    width: 75px;
+}
+
+.card-poster img{
+    object-fit: cover;
+    width: 100%;
+}
+.card-detail{
+    padding: 1em;
+}
+.card-detail svg{
+    width: 2rem;
+    height: 2rem;
+}

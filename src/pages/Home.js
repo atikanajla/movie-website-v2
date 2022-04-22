@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useGlobalContext } from '../AppProvider'
+import './Home.css'
 import HeroCarousel from '../components/HeroCarousel'
 import Loading from '../components/Loading'
 
