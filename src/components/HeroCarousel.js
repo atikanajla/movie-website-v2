@@ -6,10 +6,10 @@ function HeroCarousel({nowPlayingList}) {
   return <div className='hero-carousel'>
             <h2>HeroCarousel</h2> 
             <div className='main-carousel'>
-              <MainCarousel nowPlayingList={nowPlayingList}/>
+              {/* <MainCarousel nowPlayingList={nowPlayingList}/> */}
             </div>
             <div className='side-carousel'>
-              {/* <SideCarousel /> */}
+              <SideCarousel nowPlayingList={nowPlayingList} />
             </div>
 
             

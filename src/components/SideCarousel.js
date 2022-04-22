@@ -12,13 +12,14 @@ function SideCarousel({nowPlayingList}) {
     autoplaySpeed: 10000,
     initialSlide: 1
   }
-  return <Slider className='side-carousel' {...settings}>
-      {
-        nowPlayingList.map((movie)=>{
-          return <SideCarouselCard key={movie.id} movie={movie}/>
-        })
-      }
-    </Slider>
+  return <>
+  {
+    nowPlayingList.map((movie)=>{
+      return <SideCarouselCard movie={movie} />
+    })
+  }
+  
+  </>
 }
 
 export default SideCarousel

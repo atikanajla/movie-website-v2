@@ -8,7 +8,6 @@
 .main-carousel-card{
     position: relative;
     width: 800px;
-    background-color: red;
 }
 
 /* card backdrop */
@@ -43,10 +42,6 @@
 
 .card__content .addto-watchlist img{
     width: 150px;
-}
-
-.card__content .addto-watchlist:hover{
-    background-color: red;
 }
 
 .card__content .addto-watchlist svg:hover{
