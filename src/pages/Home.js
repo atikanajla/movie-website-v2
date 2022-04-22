@@ -3,6 +3,7 @@ import { useGlobalContext } from '../AppProvider'
 import './Home.css'
 import HeroCarousel from '../components/HeroCarousel'
 import Loading from '../components/Loading'
+import Movie from './Movie'
 
 function Home() {
   const {setLoading} = useGlobalContext();
@@ -27,7 +28,8 @@ function Home() {
     });
 
   return <div>
-    <HeroCarousel nowPlayingList={nowPlayingList}/>
+    <HeroCarousel nowPlayingList={nowPlayingList} />
+    {/* <Movie /> */}
   </div>
 }
 

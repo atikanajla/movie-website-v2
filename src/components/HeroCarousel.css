@@ -1,0 +1,30 @@
+/* ----------------------- */
+/* HERO CAROUSEL */
+/* ----------------------- */
+
+.hero-carousel{
+    display: flex;
+}
+
+.slick-slider{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#main-carousel{
+    width: 100%;
+    margin-right: 0.5em;
+    flex: 1;
+}
+#main-carousel .slick-slider{
+    max-width: 880px;
+}
+
+#side-carousel .slick-slider{
+    padding: 1em 0;
+}
+
+#side-carousel .title{
+    color: yellow;
+}

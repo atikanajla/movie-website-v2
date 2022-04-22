@@ -1,15 +1,17 @@
 import React from 'react'
+import './HeroCarousel.css'
 import MainCarousel from './MainCarousel'
 import SideCarousel from './SideCarousel'
 
 function HeroCarousel({nowPlayingList}) {
   return <div className='hero-carousel'>
-            <h2>HeroCarousel</h2> 
-            <div className='main-carousel'>
-              {/* <MainCarousel nowPlayingList={nowPlayingList}/> */}
+            <div id='main-carousel'>
+              <MainCarousel nowPlayingList={nowPlayingList}/>
             </div>
-            <div className='side-carousel'>
+            <div id='side-carousel'>
+              <h3 className='title'>Now Playing</h3>
               <SideCarousel nowPlayingList={nowPlayingList} />
+              <h3>Browse Trailer</h3>
             </div>
 
             

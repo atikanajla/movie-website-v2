@@ -10,16 +10,17 @@ function SideCarousel({nowPlayingList}) {
     vertical: true,
     autoplay: true,
     autoplaySpeed: 10000,
-    initialSlide: 1
+    initialSlide: 1,
+    arrows: false //menghilangkan arrow
   }
-  return <>
+  return <Slider {...settings}>
   {
     nowPlayingList.map((movie)=>{
-      return <SideCarouselCard movie={movie} />
+      return <SideCarouselCard key={movie.id} movie={movie} />
     })
   }
   
-  </>
+  </Slider>
 }
 
 export default SideCarousel

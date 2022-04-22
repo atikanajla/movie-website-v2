@@ -13,13 +13,13 @@ function MainCarousel({nowPlayingList}) {
     arrows: false //menghilangkan arrow
   }
 
-  return <div>
+  return <Slider {...settings}>
       {
         nowPlayingList.map((movie)=>{
-          return <MainCarouselCard movie={movie} />
+          return <MainCarouselCard key={movie.id} movie={movie} />
         })
       }
-  </div>
+  </Slider>
 
   
 }
