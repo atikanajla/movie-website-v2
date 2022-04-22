@@ -7,6 +7,7 @@ export function AppProvider({children}) {
 
   return <AppContext.Provider value={{
       loading,
+      setLoading,
 
   }}>{children}</AppContext.Provider>
 }
