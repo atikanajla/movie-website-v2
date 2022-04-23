@@ -63,8 +63,17 @@ function Home() {
   return <div className='container'>
     <HeroCarousel nowPlayingList={nowPlayingList} />
     {/* <Movie /> */}
-    <CarouselTypeA upComingList={upComingList}/>
-    <CarouselTypeB trendingList={trendingList}/>
+    <section>
+      <h1>Coming soon to teather</h1>  
+      <p>Trailer for upcoming release</p>
+      <CarouselTypeA upComingList={upComingList}/>
+    </section>
+
+    <section>
+      <h1>Fans Favorite</h1>  
+      <p>This week's top TV and movies</p>
+      <CarouselTypeB trendingList={trendingList}/>
+    </section>
   </div>
 }
 

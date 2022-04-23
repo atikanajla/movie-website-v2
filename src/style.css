@@ -19,7 +19,9 @@ body{
     margin: 0 auto;
 }
 
-
+section{
+    margin: 2em 0;
+}
 
 /* button */
 
