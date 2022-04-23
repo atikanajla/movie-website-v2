@@ -18,3 +18,7 @@
     width: 2rem;
     height: 2rem;
 }
+
+.card-detail svg:hover{
+    color: yellow;
+}

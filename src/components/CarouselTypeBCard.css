@@ -1,0 +1,59 @@
+.CarouselTypeB__Card{
+    position: relative;
+    margin: 0 10px;
+}
+.carousel__poster{
+    position: relative;
+    /* height: 100%; */
+    background-color: red;
+}
+
+.carousel__poster img{
+    /* height: 100%; */
+    width: 100%;
+}
+
+.carousel__poster svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    opacity: .8;
+}
+
+.carousel__poster svg:hover{
+    opacity: 1;
+}
+
+.carousel__content .rating{
+    position: relative;
+    display: flex;
+}
+
+.carousel__content .rating .current-rating{
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.carousel__content .rating .current-rating svg{
+    color: yellow;
+}
+
+.carousel__content .rating .rate-this{
+    color: rgb(0, 119, 255);
+}
+
+.carousel__content svg{
+    font-size: 1.3rem;
+}
+
+.carousel__btn{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.carousel__btn .watchlist{
+    width: 100%;
+    color: rgb(0, 119, 255);
+}

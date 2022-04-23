@@ -2,19 +2,18 @@
 /* HERO CAROUSEL */
 /* ----------------------- */
 
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .hero-carousel{
     display: flex;
 }
 
-.slick-slider{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 #main-carousel{
     width: 100%;
-    margin-right: 0.5em;
+    margin-right: 1em;
     flex: 1;
 }
 #main-carousel .slick-slider{

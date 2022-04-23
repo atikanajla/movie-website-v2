@@ -1,0 +1,140 @@
+/* ------------------- */
+/* NAVBAR */
+/* ------------------- */
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, 
+    rgba(69,69,75,1) 97%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header > *{
+    margin-right: .5em;
+}
+
+.header__logo{
+    background-color: rgb(245,197,24);
+    padding: .2em .5em;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    order: 1;
+}
+
+.header__navbar{
+    order:0;
+}
+.header__navbar .menu-btn{
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar .menu-btn svg{
+    font-size: 1.5rem;
+    color: rgb(199, 199, 199);
+}
+
+.header__navbar .menu-btn span{
+    display: none;
+    color: white;
+}
+
+.header__search-bar{
+    /* membuat button search float ke kanan */
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* sampai sini */
+    order: 2;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+    border-radius: .5em;
+    
+}
+
+.header__search-bar .search-filter{
+    display: none;
+    border-right: 1px solid gray;
+    padding: 0.2em 1em;
+}
+
+.header__search-bar input{
+    display: none;
+    border: none;
+    flex-grow: 1;
+    font-size: 1em;
+    padding: 0.2em 1em;
+}
+
+.header__search-bar button{
+    justify-content: flex-end;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    padding: 0.2em .5em;
+    color: white;
+}
+
+.header__IMDbpro{
+    display: none;
+    font-size: 1.2rem;
+    color: white;
+    order: 3;
+}
+
+header .header__user-menu{
+    padding-left: 1em;
+    display: flex;
+    border-left: 1px solid gray;
+    color: white;
+    order: 4;
+}
+
+header .header__user-menu .h__watchlist{
+    display: none;
+}
+
+@media (min-width: 1080px){
+    .header__logo{
+        order: 0;
+    }
+    .header__navbar{
+        order: 1;
+    }
+    .header__navbar .menu-btn span{
+        display: block;
+        margin-left: .5em;
+    }
+    
+    .header__IMDbpro{
+        display: block;
+    }
+
+    header .header__user-menu .h__watchlist{
+        display: block;
+    }
+
+}
+
+@media (min-width: 760px){
+    .header__search-bar{
+        background-color: white;
+    }
+
+    .header__search-bar button{
+        color: black;
+    }
+    .header__search-bar .search-filter{
+        display: block;
+    }
+    .header__search-bar input{
+        display: block;
+    }
+}
