@@ -1,4 +1,26 @@
-# instalation
+### MOVIE WEBSITE
+
+This is my on going project, cloning IMDb website.
+
+## Fase 1
+- Create homepage that display list of new release movie
+- create video page, that play trailer video selected
+- create movie page, that show detail of movie informations
+
+
+
+
+
+
+
+
+
+
+
+
+
+########################################
+# my note instalation
 
 1. npm install react-router-dom
 2. npm install react-icons --save
