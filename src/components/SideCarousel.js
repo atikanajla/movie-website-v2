@@ -9,13 +9,14 @@ function SideCarousel({nowPlayingList}) {
     slidesToScroll: 1,
     vertical: true,
     autoplay: true,
+    // variableWidth: true,
     autoplaySpeed: 10000,
     initialSlide: 1,
     arrows: false //menghilangkan arrow
   }
 
   // return <div>SideCarousel</div>
-  return <Slider {...settings}>
+  return <Slider  className="side-carousel" {...settings}>
   {
     nowPlayingList.map((movie)=>{
       return <SideCarouselCard key={movie.id} movie={movie} />

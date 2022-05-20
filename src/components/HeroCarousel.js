@@ -4,7 +4,7 @@ import MainCarousel from './MainCarousel'
 import SideCarousel from './SideCarousel'
 
 function HeroCarousel({nowPlayingList}) {
-  return <div className='hero-carousel container'>
+  return <div className='hero-carousel'>
             <div id='main-carousel'>
               <MainCarousel nowPlayingList={nowPlayingList}/>
             </div>
