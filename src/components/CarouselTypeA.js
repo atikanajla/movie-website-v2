@@ -6,8 +6,10 @@ function CarouselTypeA({upComingList}) {
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
+    // adaptiveHeight: true,
+    variableWidth: true,
     arrow: true,
   }
   return <Slider {...settings}>

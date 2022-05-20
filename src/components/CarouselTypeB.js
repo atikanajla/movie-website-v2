@@ -6,8 +6,10 @@ function CarouselTypeB({trendingList}) {
   const settings = {
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToScroll: 1,
     initialSlide: 0,
+    // adaptiveHeight: true,
+    variableWidth: true,
     arrow: true,
   }
   return (

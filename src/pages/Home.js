@@ -80,7 +80,7 @@ function Home() {
             <h3 className='article__header'>Fans Favorite <Link to="/"><FaChevronRight /></Link></h3>
             <p className='article__subheader'>This Week's Top TV and Movie</p>
           </div>
-          {/* <CarouselTypeA upComingList={upComingList}/> */}
+          <CarouselTypeA upComingList={upComingList}/>
         </article>
       </section>
 
@@ -94,7 +94,7 @@ function Home() {
             <h3 className='article__header'>Comingsoon <Link to="/"><FaChevronRight /></Link></h3>
             <p className='article__subheader'>Trailer for Upcoming Release</p>
           </div>
-          {/* <CarouselTypeB trendingList={trendingList}/> */}
+          <CarouselTypeB trendingList={trendingList}/>
         </article>
       </section>
   </div>
