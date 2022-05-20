@@ -156,9 +156,9 @@ a{
     width: 100%;
 }
 
-/* inner container */
+/* carousel overlay */
 
-.inner-container{
+.overlay{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -166,7 +166,7 @@ a{
     left: 0;
 }
 
-.inner-container:hover{
+.overlay:hover{
     background: rgba(32, 32, 32, 0.185);
 }
 

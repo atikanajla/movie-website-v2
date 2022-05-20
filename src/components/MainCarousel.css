@@ -2,15 +2,16 @@
 
 /* || dihilangin nanti kalau udah di gabung */
 
-#main-carousel{
+/* #main-carousel{
     width: 100%;
     background-color: red;
-}
+} */
 
 
 /* carousel card wrapper */
 .main-carousel-card{
     position: relative;
+    width: 100%;
 }
 
 /* card backdrop */
@@ -58,6 +59,6 @@
     margin: 0 .2em;
 }
 
-.carousel__content .play-btn:hover{
+.carousel__content:hover .play-btn{
     color: yellow;
 }

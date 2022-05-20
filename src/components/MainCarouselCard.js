@@ -14,12 +14,12 @@ function MainCarouselCard({movie}) {
         <div key={id} className='main-carousel-card'>
           <div className='carousel__backdrop'>
             <img src={`https://image.tmdb.org/t/p/w780/${backdrop_path}`} alt={title}></img>
-            <div className='inner-container'></div>
+            <div className='overlay'></div>
           </div>
           <div className='carousel__content'>
             <div className='addto-watchlist'>
               <img src={`https://image.tmdb.org/t/p/w200/${poster_path}`}></img>
-              <div className='inner-container'></div>
+              <div className='overlay'></div>
               <BsFillBookmarkPlusFill />
             </div>
             <BsPlayCircle className='play-btn'/>
