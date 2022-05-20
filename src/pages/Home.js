@@ -15,9 +15,14 @@ function Home() {
     const [upComingList, setUpComingList] = useState([]);
     const [trendingList, setTrendingList] = useState([]);
 
-    const now_playing = `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
-    const up_coming = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
-    const trending = `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_TMDB_KEY}`
+    var REACT_APP_TMDB_KEY = 'd5a7eca2bcff4fb1ce3a13b6bb31b059';
+
+    // const now_playing = `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
+    // const up_coming = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
+    // const trending = `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_TMDB_KEY}`
+    const now_playing = `https://api.themoviedb.org/3/movie/now_playing?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1`
+    const up_coming = `https://api.themoviedb.org/3/movie/upcoming?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1`
+    const trending = `https://api.themoviedb.org/3/trending/all/day?api_key=${REACT_APP_TMDB_KEY}`
     
     const fetchNowPlaying = async() => {
       try {
