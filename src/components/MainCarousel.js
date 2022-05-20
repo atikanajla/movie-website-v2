@@ -8,6 +8,7 @@ function MainCarousel({nowPlayingList}) {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    variableHeight: true,
     autoplay: true,
     autoplaySpeed: 10000,
     arrows: false //menghilangkan arrow

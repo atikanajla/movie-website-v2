@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useGlobalContext } from '../AppProvider'
+import {Link} from 'react-router-dom'
+import {FaChevronRight} from 'react-icons/fa'
 import './Home.css'
 import HeroCarousel from '../components/HeroCarousel'
 import Loading from '../components/Loading'
@@ -63,17 +65,33 @@ function Home() {
   return <div className='container'>
     <HeroCarousel nowPlayingList={nowPlayingList} />
     {/* <Movie /> */}
-    <section>
-      <h1>Coming soon to teather</h1>  
-      <p>Trailer for upcoming release</p>
-      <CarouselTypeA upComingList={upComingList}/>
-    </section>
+      <section className='row'>
+        <div className='row__heading'>
+          <h2>What to Watch</h2>
+        </div>
 
-    <section>
-      <h1>Fans Favorite</h1>  
-      <p>This week's top TV and movies</p>
-      <CarouselTypeB trendingList={trendingList}/>
-    </section>
+        <article className='article'>
+          <div className='article__heading'>
+            <h3 className='article__header'>Fans Favorite <Link to="/"><FaChevronRight /></Link></h3>
+            <p className='article__subheader'>This Week's Top TV and Movie</p>
+          </div>
+          {/* <CarouselTypeA upComingList={upComingList}/> */}
+        </article>
+      </section>
+
+      <section  className='row'>
+        <div className='row__heading'>
+          <h2>Explore Movie & TV Shows</h2>
+        </div>
+
+        <article className='article'>
+          <div className='article__heading'>
+            <h3 className='article__header'>Comingsoon <Link to="/"><FaChevronRight /></Link></h3>
+            <p className='article__subheader'>Trailer for Upcoming Release</p>
+          </div>
+          {/* <CarouselTypeB trendingList={trendingList}/> */}
+        </article>
+      </section>
   </div>
 }
 

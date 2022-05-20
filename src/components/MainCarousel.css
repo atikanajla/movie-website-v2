@@ -2,9 +2,11 @@
 
 /* || dihilangin nanti kalau udah di gabung */
 
-.main-carousel{
+#main-carousel{
     width: 100%;
+    background-color: red;
 }
+
 
 /* carousel card wrapper */
 .main-carousel-card{

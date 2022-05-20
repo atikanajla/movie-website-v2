@@ -1,0 +1,51 @@
+/* ------------------- */
+/* GLOBAL CLASSES */
+/* ------------------- */
+
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.row{
+    margin: 3em 1.5em !important;
+}
+
+.row__heading{
+    color: var(--clr-yellow);
+    margin-bottom: 1em;
+}
+
+
+.article__heading{
+    padding: 1em 0;
+}
+
+.article__header{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: .5em 0 !important;
+}
+
+.article__header::before{
+    display: block;
+    content: "";
+    width: 5px;
+    height: 25px;
+    background-color: var(--clr-yellow);
+}
+
+.article__heading:hover svg{
+    color: var(--clr-yellow);
+}
+
+/* ------------------- */
+/* GLOBAL CLASSES */
+/* ------------------- */
+
+.container{
+    width: 100%;
+}
