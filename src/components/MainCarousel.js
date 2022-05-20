@@ -8,12 +8,14 @@ function MainCarousel({nowPlayingList}) {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableHeight: true,
+    // variableWidth: true,
     autoplay: true,
     autoplaySpeed: 10000,
     arrows: false //menghilangkan arrow
   }
 
+
+  // return <div>MainCarousel</div>
   return <Slider {...settings}>
       {
         nowPlayingList.map((movie)=>{

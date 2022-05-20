@@ -13,6 +13,8 @@ function SideCarousel({nowPlayingList}) {
     initialSlide: 1,
     arrows: false //menghilangkan arrow
   }
+
+  // return <div>SideCarousel</div>
   return <Slider {...settings}>
   {
     nowPlayingList.map((movie)=>{
